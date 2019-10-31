@@ -19,8 +19,6 @@ def BFS(z,x,y,maze,N):
                 path.append((node[0], node[1], node[2]))
                 node = node[3]
             return path[::-1]
-        # if maze[z][x][y] == 3 and (maze[z+1][x][y] != 2 or maze[z+1][x][y] != 0):
-        #     continue
         if maze[z][x][y] == 1:
             continue
         maze[z][x][y]= 4 #visited

@@ -12,19 +12,6 @@ class Node():
         return self.position == other.position
 
 def astar(start, end, maze):
-    #
-    # # Create start and end node
-    # for x in range(N):
-    #     print("hello")
-    #     for y in range(N):
-    #         print(y)
-    #         for z in range(N):
-    #             if maze[x][y][z] == 2 and x == 0:
-    #                 start = (x,y,z)
-    #             elif maze[x][y][z] == 2 and x > 0:
-    #                 start = end
-    #             if maze[x][y][z] == 3:
-    #                 end = (x,y,z)
 
     start_node = Node(None, start)
     start_node.g = start_node.h = start_node.f = 0
@@ -55,6 +42,7 @@ def astar(start, end, maze):
         closed_list.append(current_node)
 
         # Found the goal
+
         if current_node == end_node:
             path = []
             current = current_node
@@ -105,44 +93,3 @@ def astar(start, end, maze):
             open_list.append(child)
 
 
-
-# Create start and end node
-# for x in range(N):
-#     start = end = 0
-#     for y in range(N):
-#         for z in range(N):
-#             if maze[x][y][z] == 2 and x==0:
-#                 start = (x,y,z)
-#             if maze[x][y][z] == 3:
-#                 end = (x,y,z)
-#
-#             if start != 0 and end != 0:
-#                 paths = astar(start, end, maze)
-#                 print(paths)
-
-#
-# listOfEnd = []
-# paths = []
-# temp = []
-# for height in range(N):
-#     endArray = []
-#     for depth in range(N):
-#         for width in range(N):
-#             if height == 0:
-#                 start = (0, 0, 0)
-#             else:
-#                 h, d, w = temp[len(temp)-1]
-#                 start = (h+1, d, w)
-#             if maze[height][depth][width] == 3 and height != N-1 and maze[height+1][depth][width] == 2:
-#                 end = (height, depth, width)
-#                 paths = astar(start, end, maze)
-#                 endArray.append(paths)
-#
-#     for i in range(len(endArray)):
-#         temp = endArray[0]
-#         if i < (len(endArray)-1) and len(endArray[i]) > len(endArray[i+1]):
-#             temp = endArray[i+1]
-#         elif len(endArray) == 1:
-#             temp = endArray[0]
-#
-#     print(temp)
