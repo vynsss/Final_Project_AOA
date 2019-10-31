@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="11bec27f-91f7-441b-b9de-8ca0c8c9d676" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algo/BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/BFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maze/GUI2.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/GUI2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/solve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="astar" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="final project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,7 +121,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/astar.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,9 +155,9 @@
       <list>
         <item itemvalue="Python.GUI2" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.graph" />
         <item itemvalue="Python.Generator" />
         <item itemvalue="Python.Astar (1)" />
-        <item itemvalue="Python.astar" />
       </list>
     </recent_temporary>
   </component>
