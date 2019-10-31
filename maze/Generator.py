@@ -26,9 +26,9 @@ def theMaze(N):
     return maze
 
 def validation(N):
-    checkMaze = theMaze(N)
     valid = True
     while True:
+        checkMaze = theMaze(N)
         for i in range(N-1):
             count = 0
             for j in range(N):
@@ -87,13 +87,15 @@ def validation(N):
 
         if recursiveSolve(startlayer, startRow, startCol) == False:
             theMaze(N)
+        else:
+            continue
 
 def printmaze(maze, N):
     for i in range(N):
         print(maze[i])
 
-def generate():
-    dimension = int(input("Enter the Dimension of the Maze: "))
+def generate(dimension):
+    # dimension = int(input("Enter the Dimension of the Maze: "))
     maze = validation(dimension)
     printmaze(maze, dimension)
     return maze, dimension

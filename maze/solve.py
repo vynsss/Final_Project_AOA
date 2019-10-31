@@ -1,13 +1,10 @@
 from algo.Astar import *
 from algo.BFS import *
-from maze.GUI import *
-import time
 
 def solve_astar(maze, N):
     temp = []
     for height in range(N):
         endArray = []
-        count = 0
         for depth in range(N):
             for width in range(N):
                 if height == 0:
@@ -15,18 +12,16 @@ def solve_astar(maze, N):
                 else:
                     h, d, w = temp[len(temp) - 1]
                     start = (h + 1, d, w)
-                if maze[height][depth][width] == 3 and height != N - 1 and maze[height + 1][depth][width] == 2 and count <= 1:
+                if maze[height][depth][width] == 3 and height != N - 1 and maze[height + 1][depth][width] == 2:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
-                    # plot(height, maze[height], paths)
+                    #plot(height, maze[height], paths)
                     endArray.append(paths)
-                    count = count + 1
-                elif maze[height][depth][width] == 3 and height == N - 1 and count <= 1:
+                elif maze[height][depth][width] == 3 and height == N - 1:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
-                    # plot(height, maze[height], paths)
+                    #plot(height, maze[height], paths)
                     endArray.append(paths)
-                    count = count + 1
 
         for i in range(len(endArray)):
             temp = endArray[0]
@@ -35,6 +30,7 @@ def solve_astar(maze, N):
             elif len(endArray) == 1:
                 temp = endArray[0]
         print(temp)
+
 
 def solve_BFS(maze, N):
     start = 0
@@ -59,4 +55,3 @@ def solve_BFS(maze, N):
                     # plot(i, maze[i], path)
                     print(path)
                     counter = 1
-
