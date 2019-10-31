@@ -123,7 +123,7 @@ def main():
         clock.tick(60)
 
 
-def button1(bob):
+def button1(text):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
     if 120 + 150 > mouse[0] > 120 and 320 + 100 > mouse[1] > 320:
@@ -133,7 +133,7 @@ def button1(bob):
         text_button2 = font2.render("A*", True, button_color2)
         screen.blit(text_button2, (180, 370))
         if click[0] == 1:
-            dimension = int(bob)
+            dimension = int(text)
             maze = generate(dimension)
             solve_astar(maze, dimension)
             print(click)
@@ -146,7 +146,7 @@ def button1(bob):
         screen.blit(text_button2, (180, 370))
 
 
-def button2(bob):
+def button2(text):
     mouse = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
     if 360 + 150 > mouse[0] > 360 and 320 + 100 > mouse[1] > 320:
@@ -156,7 +156,7 @@ def button2(bob):
       text_button2 = font2.render("BFS", True, button_color2)
       screen.blit(text_button2, (405, 370))
       if click[0] == 1:
-          dimension = int(bob)
+          dimension = int(text)
           maze = generate(dimension)
           solve_BFS(maze, dimension)
           print(click)

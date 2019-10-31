@@ -1,23 +1,23 @@
 from algo.Astar import *
 from algo.BFS import *
 
-def solve_astar(maze, N):
+def solve_astar(maze, dimension):
     temp = []
-    for height in range(N):
+    for height in range(dimension):
         endArray = []
-        for depth in range(N):
-            for width in range(N):
+        for depth in range(dimension):
+            for width in range(dimension):
                 if height == 0:
                     start = (0, 0, 0)
                 else:
                     h, d, w = temp[len(temp) - 1]
                     start = (h + 1, d, w)
-                if maze[height][depth][width] == 3 and height != N - 1 and maze[height + 1][depth][width] == 2:
+                if maze[height][depth][width] == 3 and height != dimension - 1 and maze[height + 1][depth][width] == 2:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
                     #plot(height, maze[height], paths)
                     endArray.append(paths)
-                elif maze[height][depth][width] == 3 and height == N - 1:
+                elif maze[height][depth][width] == 3 and height == dimension - 1:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
                     #plot(height, maze[height], paths)
