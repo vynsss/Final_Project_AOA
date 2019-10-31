@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11bec27f-91f7-441b-b9de-8ca0c8c9d676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maze/Generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algo/Astar.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/Astar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algo/BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/BFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/solve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +32,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\coding\analysis of algorithm\final project\maze" />
       <recent name="D:\coding\analysis of algorithm\final project" />
       <recent name="D:\coding\analysis of algorithm\final project\algo" />
     </key>
@@ -90,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="final project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,11 +100,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maze" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maze/Generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Generator" />
         <item itemvalue="Python.Astar (1)" />
         <item itemvalue="Python.astar" />
         <item itemvalue="Python.Astar" />
-        <item itemvalue="Python.BFS" />
       </list>
     </recent_temporary>
   </component>
