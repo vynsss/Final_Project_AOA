@@ -3,7 +3,7 @@ import random
 def theMaze(dimension):
     # dimension = int(input("Enter the Dimension of the Maze: "))
     # maze = [[[random.randint(0, 1) for h in range(dimension)] for i in range(dimension)] for j in range(dimension)]
-    maze = [[[(0 if random.randint(0, 2) else 1) for h in range(dimension)] for i in range(dimension)] for j in range(dimension)]
+    maze = [[[(0 if random.randint(0, 5) else 1) for h in range(dimension)] for i in range(dimension)] for j in range(dimension)]
     maze[0][0][0] = 2
     maze[dimension-1][dimension-1][dimension-1] = 3
 
@@ -50,3 +50,4 @@ def generate():
     dimension = int(input("Enter the Dimension of the Maze: "))
     maze = validation(dimension)
     printmaze(maze, dimension)
+    return maze, dimension

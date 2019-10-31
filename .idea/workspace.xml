@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11bec27f-91f7-441b-b9de-8ca0c8c9d676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/maze/Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maze/GUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algo/Astar.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/Astar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algo/BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/algo/BFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/solve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze/Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maze/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/maze/solve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
