@@ -122,6 +122,3 @@ def button2(text):
       screen.blit(text_button, (370, 340))
       text_button2 = font2.render("BFS", True, button_color)
       screen.blit(text_button2, (405, 370))
-
-
-main()

@@ -1,6 +1,6 @@
 from algo.Astar import *
 from algo.BFS import *
-from maze.GUI import *
+from maze.mazeGUI import *
 
 def solve_astar(maze, dimension):
     temp = []
