@@ -1,6 +1,5 @@
 from maze.solve import *
 from maze.Generator import *
-from maze.mazeGUI import *
 
 import pygame
 
