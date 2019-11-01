@@ -1,5 +1,6 @@
 from maze.solve import *
 from maze.Generator import *
+from maze.mazeGUI import *
 
 import pygame
 
@@ -82,11 +83,11 @@ def button1(text):
         text_button2 = font2.render("A*", True, button_color2)
         screen.blit(text_button2, (180, 370))
         if click[0] == 1:
+            pygame.quit()
             dimension = int(text)
-            maze , n= generate(dimension)
+            maze , n = generate(dimension)
             print(n)
             solve_astar(maze, dimension)
-            pygame.quit()
             exit()
 
     else:
@@ -107,11 +108,14 @@ def button2(text):
       text_button2 = font2.render("BFS", True, button_color2)
       screen.blit(text_button2, (405, 370))
       if click[0] == 1:
+          pygame.quit()
           dimension = int(text)
           maze , n= generate(dimension)
-          print(n)
+          # print(n)
           solve_BFS(maze, dimension)
-          pygame.quit()
+          # print(maze)
+          # visualize(n, maze, call())
+
           exit()
     else:
       pygame.draw.rect(screen, button_color, (360, 320, 150, 100), 1)

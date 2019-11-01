@@ -1,5 +1,6 @@
 from algo.Astar import *
 from algo.BFS import *
+from maze.GUI import *
 
 def solve_astar(maze, dimension):
     temp = []
@@ -15,12 +16,10 @@ def solve_astar(maze, dimension):
                 if maze[height][depth][width] == 3 and height != dimension - 1 and maze[height + 1][depth][width] == 2:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
-                    #plot(height, maze[height], paths)
                     endArray.append(paths)
                 elif maze[height][depth][width] == 3 and height == dimension - 1:
                     end = (height, depth, width)
                     paths = astar(start, end, maze)
-                    #plot(height, maze[height], paths)
                     endArray.append(paths)
 
         for i in range(len(endArray)):
@@ -30,28 +29,29 @@ def solve_astar(maze, dimension):
             elif len(endArray) == 1:
                 temp = endArray[0]
         print(temp)
+        plot(i, maze[i], temp)
 
 
-def solve_BFS(maze, N):
+def solve_BFS(maze, dimension):
     start = 0
-    for i in range(N):
+    for height in range(dimension):
         counter = 0
-        for j in range(N):
-            for k in range(N):
-                if i == 0 and counter == 0:
-                    path, start = BFS(0, 0, 0, maze, N)
-                    # plot(i, maze[i], path)
+        for depth in range(dimension):
+            for width in range(dimension):
+                if height == 0 and counter == 0:
+                    path, start = BFS(0, 0, 0, maze, dimension)
+                    plot(height, maze[height], path)
                     print(path)
                     counter = 1
-                elif i < N-1 and counter == 0:
+                elif height < dimension-1 and counter == 0:
                     h,d,w = start
-                    path, start = BFS(h, d, w, maze, N)
-                    # plot(i, maze[i], path)
+                    path, start = BFS(h, d, w, maze, dimension)
+                    plot(height, maze[height], path)
                     print(path)
                     counter = 1
-                elif i == N-1 and counter == 0:
+                elif height == dimension-1 and counter == 0:
                     h,d,w = start
-                    path = BFS(h, d, w, maze, N)
-                    # plot(i, maze[i], path)
+                    path = BFS(h, d, w, maze, dimension)
+                    plot(height, maze[height], path)
                     print(path)
                     counter = 1

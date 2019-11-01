@@ -45,5 +45,3 @@ def plot(startz, maze, results):
                 ax.add_patch(rect)
 
         plt.show()
-
-plt.close()
