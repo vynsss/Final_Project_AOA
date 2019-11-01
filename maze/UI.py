@@ -54,10 +54,11 @@ def main():
         screen.fill((255,222,173))
         screen.blit(text,(120, 100))
         screen.blit(text2,(115, 190))
-        txt_surface = font3.render(textInside, True, color)
 
+        txt_surface = font3.render(textInside, True, color)
         width = max(200, txt_surface.get_width() + 10)
         input_box.w = width
+        screen.blit(txt_surface, (215,272))
 
         pygame.draw.rect(screen, color, input_box, 2)
         text_button2 = font4.render("Enter Maze Dimesion :", True, (82,139,139))

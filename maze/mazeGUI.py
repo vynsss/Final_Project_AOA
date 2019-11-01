@@ -6,8 +6,6 @@ def plot(startz, maze, results):
     layer = results
     curentMaze = maze
 
-    print("Maze", maze)
-
     fig = plt.figure(startz)
     plt.clf()
     ax = fig.add_subplot(111)
